@@ -11,6 +11,10 @@ app.listen(process.env.PORT || 3000);
 //Load the S3 info from the environment variables
 const S3_BUCKET = process.env.S3_BUCKET;
 
+app.get('/', function (req, res) {
+	res.render('account.hmlt');
+})
+
 app.get('/account', function(req, res) {
 	res.render('account.html');
 });
