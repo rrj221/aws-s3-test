@@ -12,7 +12,8 @@ app.listen(process.env.PORT || 3000);
 const S3_BUCKET = process.env.S3_BUCKET;
 
 app.get('/', function (req, res) {
-	res.render('account.hmlt');
+	console.log('hi');
+	res.render('account.html');
 })
 
 app.get('/account', function(req, res) {
