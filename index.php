@@ -1,1 +1,1 @@
-<?php include_once("homepage/index.html"); ?>
+<?php include_once("views/account.html"); ?>
