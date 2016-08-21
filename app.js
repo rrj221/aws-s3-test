@@ -32,7 +32,7 @@ app.get('/sign-s3', function(req, res) {
     ACL: 'public-read'
   };
 
-  s3.getSignedUrl('putObject', s3Params, (err, data) => {
+  s3.getSignedUrl('putObject', s3Params, function (err, data) {
     if(err){
       console.log(err);
       return res.end();
@@ -45,3 +45,5 @@ app.get('/sign-s3', function(req, res) {
     res.end();
   });
 });
+
+
